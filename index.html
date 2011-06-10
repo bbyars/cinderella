@@ -58,6 +58,7 @@
           <a href="http://dev.mysql.com">mysql</a>,
           <a href="http://postgresql.org">postgres</a>,
           <a href="http://code.google.com/p/redis/">redis</a>,
+          <a href="http://lucene.apache.org/solr/">solr</a>,
           <a href="http://memcached.org/">memcached</a> and
           <a href="http://www.mongodb.org">mongodb</a>
         </li>
@@ -72,7 +73,6 @@
       <p>
         Cinderella is a fully managed development environment for open source
         hacking on Mac OSX.  It's powered by
-        <a href="http://rvm.beginrescueend.com" target="_none">rvm</a>,
         <a href="http://mxcl.github.com/homebrew/" target="_none">homebrew</a> and
         <a href="http://wiki.opscode.com/display/chef/Home" target="_none">chef</a>.
         You only need
@@ -89,8 +89,8 @@
 
     <h2>Dependencies</h2>
     <ul>
-      <li>Rubygems 1.6.2</li>
-      <li>Chef 0.9.8</li>
+      <li>Rubygems 1.7.2</li>
+      <li>Chef 0.9.16</li>
     </ul>
 
     <h2>Install</h2>
@@ -109,10 +109,19 @@
 %
     </pre>
 
+    <p>Every so often it'll look like it has locked up and isn't doing anything.  If this happens, you can safely hit <strong>ctrl-c</strong> and run cinderella again by hand.
+    <pre class="terminal">% cinderella
+[22:06:02] INFO: Starting Chef Solo Run
+    </pre>
+    </p>
     <p>
       Cinderella can manage itself from here.  Open up a new shell and you're
       ready to hack.
     </p>
+
+    <h2>Uninstall</h2>
+    <p>If for some reason you don't find cinderella to be amazing then you can easily uninstall it.  </p>
+    <pre class="terminal">% cinderella --uninstall </pre>
 
     <h2>License</h2>
     <p><pre>Copyright (c) 2010 Corey Donohoe
